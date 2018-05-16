@@ -77,6 +77,13 @@ body {
     /*Esta es la parte donde van los form de cambio de datos*/
 }
 
+/*referenciasUsuario.pug*/
+#ref{
+    /*Aqui se ven las referencias del trabajador*/
+    background-color: #4685B5;
+    color: white;
+}
+
 .anuncio{
 	background-color: #A96E0C;
 }
