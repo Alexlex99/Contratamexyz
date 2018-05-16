@@ -37,18 +37,17 @@ html
           li.navbar-item
             a.nav-link(href='../logout') Salir
     form(id='ewe')
-      .m-4
+      #bleh.m-4
         .rounded.border.border-dark.mb-2.p-2
-          #bleh.form-row
+          .form-row
             .col.border.disabled.border-dark.border-left-0.border-top-0.border-bottom-0
               p!= nombre+' '+apellidos
             .col.border.border-dark.border-left-0.border-top-0.border-bottom-0
               input.form-control.form-control-sm#pubtype(type='text', name='pubtype', onkeypress='return soloLetras(event)', placeholder='Tipo de trabajo')
             .col-5
               .progress(style='margin: 2px 0px 0px 0px')
-                 -var ca = 100 - calf
-              .progress-bar.bg-success(role='progress-bar', style='width: '+calf+'%; height: 20px', aria-valuenow=''+calf, aria-valuemin='0', aria-valuemax='100')
-              .progress-bar.bg-danger(role='progress-bar', style='width: '+ca+'%;  height: 20px', aria-valuenow=''+ca, aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg-success(role='progress-bar', style='width: 80%; height: 28px', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+                .progress-bar.bg-danger(role='progress-bar', style='width: 20%;  height: 28px', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
           hr
           div
             textarea.form-control(placeholder='Describe tu trabajo', onkeypress='return Todos(event)' rows='7', name='desc', id='desc')
